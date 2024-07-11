@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Library Management System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Library Management System</h1>
-    </header>
-    <main>
+    <div class="container">
+        <h1 class="heading">Library Management System</h1>
+
+        <!-- Add Book Section -->
         <section id="add-book">
             <h2>Add a New Book</h2>
             <form id="add-book-form">
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" required>
+                <label for="title">Book Name:</label>
+                <input type="text" class="input" id="title" placeholder="Enter book name" required>
 
                 <label for="author">Author:</label>
-                <input type="text" id="author" name="author" required>
+                <input type="text" class="input" id="author" placeholder="Enter author name" required>
 
                 <label for="isbn">ISBN:</label>
-                <input type="text" id="isbn" name="isbn" required>
+                <input type="text" class="input" id="isbn" placeholder="Enter ISBN number" required>
 
-                <button type="submit">Add Book</button>
+                <button type="submit" class="btn" id="btn">Add Book</button>
             </form>
         </section>
 
+        <!-- Search Book Section -->
+        <section id="search-book">
+            <h2>Search Books</h2>
+            <input type="text" class="input" id="search" placeholder="Search by title or author">
+        </section>
+
+        <!-- Book List Section -->
         <section id="book-list">
             <h2>Book List</h2>
-            <input type="text" id="search" placeholder="Search by title or author">
             <ul id="book-list-ul"></ul>
         </section>
-    </main>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
