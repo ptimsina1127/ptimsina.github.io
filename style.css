@@ -1,35 +1,50 @@
 body {
-  
+  background: linear-gradient(to left bottom, lightgreen, lightblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
-
+  display: flex;
+  flex-direction: column;
+  background: rgba(225, 225, 225, 0.3);
+  padding: 20px;
+  margin: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
 }
 
-.heading {
+.heading {}
 
+h2 {}
+
+.input{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
-
-h2 {
-
-}
-
-.input, .btn {
-
-}
-
 .btn {
-
+  background: lightgreen;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  
 }
 
-#book-list-ul {
+.btn {}
 
-}
+#book-list-ul {}
 
-#book-list-ul li {
+#book-list-ul li {}
 
-}
-
-#search {
-
-}
+#search {}
